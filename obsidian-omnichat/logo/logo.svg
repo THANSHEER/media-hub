@@ -1,0 +1,70 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect x="12" y="12" width="232" height="232" rx="44"
+        fill="#8B5CF6"/>
+
+  <!-- Soft inner glow -->
+  <rect x="12" y="12" width="232" height="232" rx="44"
+        fill="url(#bgGlow)"/>
+
+  <!-- Shadow -->
+  <g filter="url(#shadow)">
+    <!-- Robot body -->
+    <rect x="80" y="88"
+          width="96"
+          height="72"
+          rx="16"
+          stroke="white"
+          stroke-width="10"
+          fill="none"/>
+
+    <!-- Antenna -->
+    <path d="M112 88V68H96"
+          stroke="white"
+          stroke-width="10"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- Left connector -->
+    <path d="M80 124H70"
+          stroke="white"
+          stroke-width="10"
+          stroke-linecap="round"/>
+
+    <!-- Right connector -->
+    <path d="M186 124H196"
+          stroke="white"
+          stroke-width="10"
+          stroke-linecap="round"/>
+
+    <!-- Eyes -->
+    <rect x="102" y="112"
+          width="10"
+          height="22"
+          rx="5"
+          fill="white"/>
+
+    <rect x="144" y="112"
+          width="10"
+          height="22"
+          rx="5"
+          fill="white"/>
+  </g>
+
+  <defs>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(128 64) rotate(90) scale(180)">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#7C5AF5"/>
+    </radialGradient>
+
+    <filter id="shadow" x="0" y="0" width="256" height="256">
+      <feDropShadow dx="0" dy="4" stdDeviation="3"
+                    flood-color="#5B3FC0"
+                    flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+</svg>
